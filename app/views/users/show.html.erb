@@ -3,6 +3,10 @@
  <% if current_user.friend?(@user) %>
       <%= link_to 'Add Friend', friendships_path(user_id: @user.id), method: :post %>
     <% end %>  <article class="timeline">
+    <h3>Friend Requests:</h3>
+    <ul class="posts">
+      <%= render "friend_request" %>
+    </ul>
     <h3>Recent posts:</h3>
     <ul class="posts">
       <%= render @posts %>
