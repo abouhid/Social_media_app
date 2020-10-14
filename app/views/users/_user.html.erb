@@ -3,7 +3,7 @@
   Name: <%= user.name %>
   <span class="profile-link">
     <%= link_to 'See Profile',  user_path(user), class: 'profile-link' %>
-    <% unless current_user.friend?(user) %>
+    <% unless current_user.friendship_requested?(user) %>
       <%= link_to 'Add Friend', friendships_path(user_id: user.id), method: :post %>
     <% end %>
 

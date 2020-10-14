@@ -1,0 +1,13 @@
+1- Showing posts of both friends and yourself
+
+2- Unfriend/Friend Request on User page
+
+4- Move logic from view to helpers
+
+5- Create tests
+
+6-Fix Github Actions
+
+7- Deploy Project
+
+8- Write README.md
