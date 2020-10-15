@@ -1,4 +1,11 @@
-<% if current_user.friend?(post.user)  %>
+<% if current_user.friend?(post.user)  or %>
+<%
+=begin%>
+ <%= current_user.friends_posts %>
+<%= post %> 
+<%
+=end%>
+
 
 <li class="post">
   <div>

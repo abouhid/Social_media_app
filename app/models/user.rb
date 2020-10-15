@@ -10,6 +10,7 @@ class User < ApplicationRecord
 
   has_many :friendships
   has_many :inverse_friendships, class_name: 'Friendship', foreign_key: 'friend_id'
+  # has_many :friends_posts, through: :friendships, source: :posts
 
   scope :all_except, ->(user) { where.not(id: user.id) }
 
