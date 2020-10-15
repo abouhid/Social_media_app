@@ -60,8 +60,6 @@
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.4.4, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.9.0, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="factory_girl (v4.9.0, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="factory_girl_rails (v4.9.0, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faker (v2.14.0, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.13.1, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, RVM: ruby-2.7.1 [global]) [gem]" level="application" />
