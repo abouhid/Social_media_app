@@ -1,0 +1,9 @@
+<section class="users-section">
+  <ul class="users-list">
+    <% current_user.friends.each do |friend| %>
+      <li>
+        Name: <%= friend.name %>
+      </li>
+    <% end %>
+  </ul>
+</section>

@@ -18,7 +18,8 @@ class User < ApplicationRecord
   end
 
   def friends
-    friendships.map { |friendship| friendship.friend if friendship.confirmed }
+    buddy = friendships.map { |friendship| friendship.friend if friendship.confirmed }
+    buddy.compact
   end
 
   def friend?(user)

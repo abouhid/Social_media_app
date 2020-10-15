@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails Social_media_app: test" uuid="1e719939-121c-4592-b87b-ed6da2e40745">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/ror_social_scaffold_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails Social_media_app: development" uuid="8ccab2cb-4cf5-467a-ab02-e9930a0ff117">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/ror_social_scaffold_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails Social_media_app: production" uuid="14249883-7e25-4a5d-ad8f-b1d915f5b3db">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/ror_social_scaffold_production</jdbc-url>
+    </data-source>
+  </component>
+</project>
