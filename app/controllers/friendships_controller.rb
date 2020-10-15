@@ -31,9 +31,9 @@ class FriendshipsController < ApplicationController
   def destroy
     @friendship = Friendship.find(params[:id])
     if @friendship.destroy
-      redirect_to users_path, notice: 'Friendship was rejected.'
+      redirect_to request.referrer, notice: 'Friendship was rejected.'
     else
-      redirect_to users_path, alert: 'Error rejecting friendship.'
+      redirect_to request.referrer, alert: 'Error rejecting friendship.'
     end
   end
 

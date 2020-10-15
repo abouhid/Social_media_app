@@ -1,12 +1,24 @@
 <section class="user-section">
   <h2><%= "Name: #{@user.name}" %></h2>
- <% if current_user.friend?(@user) %>
-      <%= link_to 'Add Friend', friendships_path(user_id: @user.id), method: :post %>
-    <% end %>  <article class="timeline">
-    <h3>Friend Requests:</h3>
+
+    <article class="timeline">
+    
+
+     <% if current_user.friend?(@user) %>
+    <%= render "unfriend" %>
+    <% elsif @user.friendship_requested?(current_user) %>
+
     <ul class="posts">
       <%= render "friend_request" %>
     </ul>
+    <% end %> 
+
+ <% unless current_user.friendship_requested?(@user) or current_user.friend?(@user) %>
+  <%= link_to 'Add Friend', friendships_path(user_id: @user.id), method: :post %>
+ <% end %> 
+
+
+   
     <h3>Recent posts:</h3>
     <ul class="posts">
       <%= render @posts %>

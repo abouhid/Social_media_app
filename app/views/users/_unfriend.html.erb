@@ -1,0 +1,13 @@
+
+ 
+    <% current_user.friendships.each do |request| %>
+   
+      <% if request.friend_id == @user.id%>
+      
+        <span class="profile-link"> 
+          <%= link_to 'Unfriend',  friendship_path(request), method: :delete, data: { confirm: 'Are you sure?' } , class: 'profile-link' %>
+        </span>
+    
+    <% end %>
+    <% end %>
+
