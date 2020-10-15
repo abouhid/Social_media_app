@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @users= User.all
+    @users = User.all
     @post = Post.new
     # custom_timeline
   end
@@ -18,15 +18,12 @@ class PostsController < ApplicationController
     end
   end
 
-
   private
 
   # def timeline_posts
   #   @timeline_posts ||= Post.all.ordered_by_most_recent.includes(:user)
   #   @custom_timeline = custom_timeline
   # end
-
-
 
   def post_params
     params.require(:post).permit(:content)

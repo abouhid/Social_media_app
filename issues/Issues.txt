@@ -1,6 +1,6 @@
 1- Showing posts of both friends and yourself (Done)
 
-2- Unfriend/Friend Request on User page (In Progress)
+2- Unfriend/Friend Request on User page (Backlog)
 
 4- Move logic from view to helpers (Done)
 
