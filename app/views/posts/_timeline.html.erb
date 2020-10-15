@@ -1,6 +1,6 @@
 <% posts_arr = custom_timeline %>
 <% posts_arr.each do |arr|%>
-  <% arr.each do |post| %>
+  <% arr.sort_by(&:created_at).reverse_each do |post| %>
     <li class="post">
       <div>
         <div class='post-attribution' >

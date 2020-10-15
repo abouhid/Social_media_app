@@ -18,4 +18,10 @@ module PostHelper
     end
     friends_posts
   end
+
+  def sorted_custom_timeline
+    custom_timeline.each do |post|
+      post.sort_by(&:created_at).reverse!
+    end
+  end
 end
