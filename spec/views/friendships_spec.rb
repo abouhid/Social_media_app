@@ -45,12 +45,12 @@ describe 'testing friendship features', type: :feature do
     end
 
     it 'friend Requests are rendered' do
-      visit "friendships"
+      visit 'friendships'
       expect(page).to have_content 'Friend Requests'
     end
 
     it 'accept Friend Request' do
-      visit "friendships"
+      visit 'friendships'
       sleep(2)
       click_link('Accept', match: :first)
       expect(page).to have_content 'Friend request was accepted.'
