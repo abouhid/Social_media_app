@@ -16,6 +16,6 @@
 
 10- Unfriend button still appearing in the User's show page(Done)
 
-11- Posts not appearing in friends user show page
+11- Posts not appearing in friends user show page (Done)
 
 12- Fix DRY for friend_request
