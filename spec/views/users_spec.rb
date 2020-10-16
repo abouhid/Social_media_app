@@ -3,7 +3,10 @@ require 'spec_helper'
 
 describe 'the signin process', type: :feature do	
   before :each do	
-    @test_user = User.create(name: 'Alex', email: 'alex@gmail.com')	
+    @test_user = User.create!({ name: 'Alex',
+                                email: 'alex@gmail.com',
+                                password: '111111',
+                                password_confirmation: '111111' })
   end	
   it 'Display message when creating a new user' do	
     visit '/users/sign_up'	
@@ -20,8 +23,8 @@ describe 'the signin process', type: :feature do
   it 'Display message when logged in' do	
     visit '/users/sign_in'	
 
-    fill_in 'user_email', with: '123@gmail.com'	
-    fill_in 'user_password', with: '123123'	
+    fill_in 'user_email', with: 'alex@gmail.com'
+    fill_in 'user_password', with: '111111'
 
     click_button('Log in')	
 

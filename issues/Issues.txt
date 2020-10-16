@@ -21,8 +21,8 @@
 12- Fix DRY for friend_request
 
 13- Tests for:
-Log in
-Sign Up
+Log in (Done)
+Sign Up (Done)
 Sign Out
 Add post
 Add comment
