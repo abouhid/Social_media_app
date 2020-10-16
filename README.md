@@ -2,6 +2,8 @@
 
 # Social Media App
 
+![App Preview](./social_media.gif)
+
 > This project consists of applying our knowledge of Ruby on Rails to a real social media app. The challenge here was to develop ways of adding friends, accepting/rejecting friend requests and being able to like and comment posts created by the users
 
 ## Built With
@@ -12,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://fakebookalexkelyn.herokuapp.com/)
+[Live Demo](https://fakebookalexkelyn.herokuapp.com/)
 
 
 ### Usage
@@ -81,5 +83,5 @@ Give a ⭐️ if you like this project!
 - Microverse
 - GitHub
 - TheOdinProject
-- Ruby on Rails :tada
+- Ruby on Rails
 
