@@ -42,17 +42,12 @@ run rails s
 Open `http://localhost:3000/` in your browser.
 
 ### Run tests
-
-```
-    rpsec --format documentation
-```
-
-> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
+To run the tests:
+- Run `rspec --format documentation`
 
 ### Deployment
 
-TBA
-
+This project has been deployed on Heroku using the `Heroku CLI` and a continuous deployment pipeline has been setup between Heroku and GitHub.
 ## Instructions
 Once inside the application, you have to create an account since you are a new user so as to be able to enjoy all that the web app has to offer. Once you've created the application, you can use the navigation links to navigate anywhere within the page.
 
