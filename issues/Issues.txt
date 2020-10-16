@@ -11,3 +11,9 @@
 7- Deploy Project (Done)
 
 8- Write README.md
+
+9- Alex added kelyn. Kelyn was still able to add Alex in the All Users Page
+
+10- Unfriend button still appearing in the User's show page(Done)
+
+11- Posts not appearing in friends user show page

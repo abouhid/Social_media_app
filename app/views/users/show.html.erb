@@ -2,11 +2,8 @@
   <h2><%= "Name: #{@user.name}" %></h2>
 
     <article class="timeline">
-    
-
-     <% if current_user.friend?(@user) %>
-    <%= render "unfriend" %>
-    <% elsif @user.friendship_requested?(current_user) %>
+     
+    <% if @user.friendship_requested?(current_user) %>
 
     <ul class="posts">
       <%= render "friend_request" %>
@@ -16,8 +13,6 @@
  <% unless current_user.friendship_requested?(@user) or current_user.friend?(@user) %>
   <%= link_to 'Add Friend', friendships_path(user_id: @user.id), method: :post %>
  <% end %> 
-
-
    
     <h3>Recent posts:</h3>
     <ul class="posts">
