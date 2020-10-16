@@ -3,14 +3,13 @@
 
     <article class="timeline">
      
-    <% if @user.friendship_requested?(current_user) %>
-
-    <ul class="posts">
-      <%= render "friend_request" %>
-    </ul>
+    <% if friend_status(@user, current_user) %>
+      <ul class="posts">
+        <%= render "friend_request" %>
+      </ul>
     <% end %> 
 
- <% unless current_user.friendship_requested?(@user) || current_user.friend?(@user) %>
+ <% unless friend_or_friendship_requested(@user, current_user) %>
   <%= link_to 'Add Friend', friendships_path(user_id: @user.id), method: :post %>
  <% end %> 
    
