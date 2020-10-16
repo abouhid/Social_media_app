@@ -10,7 +10,7 @@
     </ul>
     <% end %> 
 
- <% unless current_user.friendship_requested?(@user) or current_user.friend?(@user) %>
+ <% unless current_user.friendship_requested?(@user) || current_user.friend?(@user) %>
   <%= link_to 'Add Friend', friendships_path(user_id: @user.id), method: :post %>
  <% end %> 
    
