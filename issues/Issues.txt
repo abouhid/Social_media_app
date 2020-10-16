@@ -23,10 +23,10 @@
 13- Tests for:
 Log in (Done)
 Sign Up (Done)
-Sign Out
+Sign Out (Done)
 Add post
 Add comment
 Add Like
-Request friend
+Request friend (Done)
 Accept Friend
 Reject Friend
