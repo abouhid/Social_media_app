@@ -15,7 +15,7 @@ describe 'testing friendship features', type: :feature do
                                           password: '111111',
                                           password_confirmation: '111111' })
     @friendship = Friendship.create!({ user_id: @test_friend_request.id,
-                                       friend_id: @test_user.id,
+                                       friend_id: @test_friend.id,
                                        confirmed: nil })
 
     @post = Post.create!({ user_id: @test_friend_request.id,
@@ -40,43 +40,39 @@ describe 'testing friendship features', type: :feature do
 
     it 'users can add friends' do
       sleep(2)
-      click_link 'Add Friend'
-      expect(page).to have_content 'Invite was successfully sent.'
+      click_link('Add Friend', match: :first)
+      expect(page).to have_content 'Friend Added'
     end
 
-    it 'Message of Peding Request is displayed' do
-      sleep(2)
-      click_link 'Invite to friendship'
-      expect(page).to have_content 'pending request'
-    end
-
-    it 'Resquests are displayed' do
-      expect(page).to have_content 'Accept friendship'
+    it 'Friend Requests are rendered' do
+      visit "friendships"
+      expect(page).to have_content 'Friend Requests'
     end
 
     it 'Accept invitation' do
+      visit "friendships"
       sleep(2)
-      click_link 'Accept friendship'
+      click_link('Accept', match: :first)
       expect(page).to have_content 'Friend request was accepted.'
     end
 
     it 'Accept invitation button dissapears if invitation accepted' do
       sleep(2)
-      click_link 'Accept friendship'
-      expect(page).to_not have_content 'Accept friendship'
+      click_link 'Accept'
+      expect(page).to_not have_content 'Accept'
     end
 
     it 'If friendship was accepted display posts of friends in timeline' do
-      visit 'users'
-      click_link 'Accept friendship'
+      visit 'friendships'
+      click_link 'Accept'
       sleep(2)
       visit 'posts'
-      expect(page).to have_content 'Test post from John'
+      expect(page).to have_content 'Test post from Chuck'
     end
 
     it 'If friendship was accepted create a new row for inverse friendship' do
-      visit 'users'
-      expect { click_link 'Accept friendship' }.to change(Friendship, :count).by(1)
+      visit 'friendships'
+      expect { click_link 'Accept' }.to change(Friendship, :count).by(1)
     end
   end
 end
