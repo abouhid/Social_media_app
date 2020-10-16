@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://fakebookalexkelyn.herokuapp.com/)
+[Live Demo](https://fakebookalexkelyn.herokuapp.com/)
 
 
 ### Usage
