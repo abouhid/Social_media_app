@@ -44,25 +44,25 @@ describe 'testing friendship features', type: :feature do
       expect(page).to have_content 'Friend Added'
     end
 
-    it 'Friend Requests are rendered' do
+    it 'friend Requests are rendered' do
       visit "friendships"
       expect(page).to have_content 'Friend Requests'
     end
 
-    it 'Accept invitation' do
+    it 'accept Friend Request' do
       visit "friendships"
       sleep(2)
       click_link('Accept', match: :first)
       expect(page).to have_content 'Friend request was accepted.'
     end
 
-    it 'Accept invitation button dissapears if invitation accepted' do
+    it 'accept invitation button disappears if invitation accepted' do
       sleep(2)
       click_link 'Accept'
       expect(page).to_not have_content 'Accept'
     end
 
-    it 'If friendship was accepted display posts of friends in timeline' do
+    it 'display list of friends posts' do
       visit 'friendships'
       click_link 'Accept'
       sleep(2)
@@ -70,7 +70,7 @@ describe 'testing friendship features', type: :feature do
       expect(page).to have_content 'Test post from Chuck'
     end
 
-    it 'If friendship was accepted create a new row for inverse friendship' do
+    it 'if friendship was accepted create a new row for inverse friendship' do
       visit 'friendships'
       expect { click_link 'Accept' }.to change(Friendship, :count).by(1)
     end
