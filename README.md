@@ -83,5 +83,5 @@ Give a ⭐️ if you like this project!
 - Microverse
 - GitHub
 - TheOdinProject
-- Ruby on Rails :tada
+- Ruby on Rails
 
