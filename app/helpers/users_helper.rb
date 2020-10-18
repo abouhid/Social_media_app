@@ -9,6 +9,6 @@ module UsersHelper
   end
 
   def friend_or_friendship_requested(user, current_user)
-    current_user.friendship_requested?(user) || current_user.friend?(user)
+    current_user.friendship_requested?(user) || current_user.friend?(user) || user.friendship_requested?(current_user)
   end
 end
