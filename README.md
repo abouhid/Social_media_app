@@ -1,83 +1,73 @@
-# Scaffold for social media app with Ruby on Rails
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+# Social Media App
+
+![App Preview](./social_media.gif)
+
+> This project consists of applying our knowledge of Ruby on Rails to a real social media app. The challenge here was to develop ways of adding friends, accepting/rejecting friend requests and being able to like and comment posts created by the users
 
 ## Built With
 
 - Ruby v2.7.0
 - Ruby on Rails v5.2.4
 
+
 ## Live Demo
 
-TBA
-
-
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-Ruby: 2.6.3
-Rails: 5.2.3
-Postgres: >=9.5
-
-### Setup
-
-Instal gems with:
-
-```
-bundle install
-```
-
-Setup database with:
-
-```
-   rails db:create
-   rails db:migrate
-```
-
-### Github Actions
-
-To make sure the linters' checks using Github Actions work properly, you should follow the next steps:
-
-1. On your recently forked repo, enable the GitHub Actions in the Actions tab.
-2. Create the `feature/branch` and push.
-3. Start working on your milestone as usual.
-4. Open a PR from the `feature/branch` when your work is done.
+[Live Demo](https://fakebookalexkelyn.herokuapp.com/)
 
 
 ### Usage
 
-Start server with:
+Once you open the link on your browser, you are asked to login in order to be able to see your posts and your friends' posts.
 
-```
-    rails server
-```
+By clicking the "Sign Up" button you are able to create your account after you fill in the necessary fields.
 
+You now can create a post and share whatever you want with your friends! If you do not have friends for now, add them. Networking is everything!
+
+Do not want to be friends with 'RealJustinBieber3'? You can reject the friend request at will. 
+
+Moreover, you are able to see all the users and all your friends on the 'All Users' and 'Friendship' pages respectively!
+
+
+### Getting Started (For Developers)
+```
+Open Terminal
+run git clone git@github.com:abouhid/Social_media_app.git
+run cd Social_media_app
+run bundle install
+run rake db:migrate
+run rails s
+```
 Open `http://localhost:3000/` in your browser.
 
 ### Run tests
-
-```
-    rpsec --format documentation
-```
-
-> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
+To run the tests:
+- Run `rspec --format documentation`
 
 ### Deployment
 
-TBA
+This project has been deployed on Heroku using the `Heroku CLI` and a continuous deployment pipeline has been setup between Heroku and GitHub.
+## Instructions
+Once inside the application, you have to create an account since you are a new user so as to be able to enjoy all that the web app has to offer. Once you've created the application, you can use the navigation links to navigate anywhere within the page.
 
 ## Authors
 
-TBA
+👤 **Alexandre Bouhid**
+
+- Github: [@abouhid](https://github.com/abouhid)
+- LinkedIn: [Alexandre Bouhid](https://www.linkedin.com/in/alexandrebouhid/)
+
+👤 **Kelyn Paul Njeri**
+
+- Github: [@KelynPNjeri](https://github.com/KelynPNjeri)
+- Twitter: [@KelynNjeri](https://twitter.com/kelyn-njeri)
+- Linkedin: [Kelyn Paul](https://linkedin.com/kelyn-paul)
+
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
 
 ## Show your support
 
@@ -85,9 +75,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
-
-## 📝 License
-
-TBA
+- Microverse
+- GitHub
+- TheOdinProject
+- Ruby on Rails
 

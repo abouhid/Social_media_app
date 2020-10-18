@@ -1,6 +1,18 @@
 <section class="user-section">
   <h2><%= "Name: #{@user.name}" %></h2>
-  <article class="timeline">
+
+    <article class="timeline">
+     
+    <% if friend_status(@user, current_user) %>
+      <ul class="posts">
+        <%= render "friend_request" %>
+      </ul>
+    <% end %> 
+
+ <% unless friend_or_friendship_requested(@user, current_user) %>
+  <%= link_to 'Add Friend', friendships_path(user_id: @user.id), method: :post %>
+ <% end %> 
+   
     <h3>Recent posts:</h3>
     <ul class="posts">
       <%= render @posts %>
