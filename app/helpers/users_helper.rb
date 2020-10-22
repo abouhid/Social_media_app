@@ -8,6 +8,7 @@ module UsersHelper
   end
 
   def friend_or_friendship_requested(user, current_user)
+<<<<<<< HEAD
     unless current_user.friendship_requested?(user) || current_user.friend?(user) || user.friendship_requested?(current_user)
       link_to 'Add Friend', friendships_path(user_id: user.id), method: :post
     end
@@ -23,5 +24,8 @@ module UsersHelper
     elsif current_user.friendship_requested?(user)
       raw("Wait for #{user.name} to accept your friend request!")
     end
+=======
+    current_user.friendship_requested?(user) || current_user.friend?(user) || user.friendship_requested?(current_user)
+>>>>>>> development
   end
 end
