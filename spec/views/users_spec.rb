@@ -1,5 +1,6 @@
 require 'rails_helper.rb'
 require 'spec_helper'
+# User Capybara test
 
 describe 'the signin process', type: :feature do
   before :each do
