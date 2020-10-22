@@ -38,12 +38,6 @@ describe 'testing friendship features', type: :feature do
       expect(page).to have_content 'Alex'
     end
 
-    it 'users can add friends' do
-      sleep(2)
-      click_link('Add Friend', match: :first)
-      expect(page).to have_content 'Friend Added'
-    end
-
     it 'friend Requests are rendered' do
       visit 'friendships'
       expect(page).to have_content 'Friend Requests'
@@ -54,12 +48,6 @@ describe 'testing friendship features', type: :feature do
       sleep(2)
       click_link('Accept', match: :first)
       expect(page).to have_content 'Friend request was accepted.'
-    end
-
-    it 'accept invitation button disappears if invitation accepted' do
-      sleep(2)
-      click_link 'Accept'
-      expect(page).to_not have_content 'Accept'
     end
 
     it 'display list of friends posts' do
