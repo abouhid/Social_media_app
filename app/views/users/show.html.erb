@@ -9,9 +9,8 @@
       </ul>
     <% end %> 
 
- <% unless friend_or_friendship_requested(@user, current_user) %>
-  <%= link_to 'Add Friend', friendships_path(user_id: @user.id), method: :post %>
- <% end %> 
+    <%=friend_or_friendship_requested(@user, current_user) %>
+
    
     <h3>Recent posts:</h3>
     <ul class="posts">
