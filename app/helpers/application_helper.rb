@@ -34,13 +34,11 @@ module ApplicationHelper
 
   def nav_bar
     if user_signed_in?
-     raw(" <p class='logged'> Logged in as:<br> #{ current_user.name}</p>
+      raw(" <p class='logged'> Logged in as:<br> #{current_user.name}</p>
       #{link_to 'Sign out', destroy_user_session_path, method: :delete} ")
     else
-      link_to 'Sign in', user_session_path 
+      link_to 'Sign in', user_session_path
 
     end
   end
-
-
 end

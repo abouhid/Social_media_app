@@ -2,15 +2,8 @@
   <h2><%= "Name: #{@user.name}" %></h2>
 
     <article class="timeline">
-     
-    <% if friend_status(@user, current_user) %>
-      <ul class="posts">
-        <%= render "friend_request" %>
-      </ul>
-    <% end %> 
-
-    <%=friend_or_friendship_requested(@user, current_user) %>
-
+    
+    <%= friend_status(@user, current_user) %>
    
     <h3>Recent posts:</h3>
     <ul class="posts">

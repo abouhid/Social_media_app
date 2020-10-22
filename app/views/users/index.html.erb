@@ -7,10 +7,7 @@
   <span class="profile-link">
     <%= link_to 'See Profile',  user_path(user), class: 'profile-link' %>
 
-    <%=friend_or_friendship_requested(user, current_user) %>
-    
-    <%= friend_status(user, current_user) %>
-     
+    <%=friend_or_friendship_requested(user, current_user) %>     
   </span>  
     <% end %>
     </li>
